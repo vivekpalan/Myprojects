@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header section */
+.header-section{
+    width: 100%;
+    /* border-bottom: 2px solid gainsboro; */
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+/* .navcontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid red;
+} */
+.bars{
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+    margin-bottom: 5px;    
+}
+
+/* Hero section */
+.hero-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.foodimg>img{
+    width: 450px;
+    margin: 30px 80px;
+}
+.content{
+    width: 100%;
+    margin-right:120px;
+}
+.offer{
+    width: 200px;
+    background-color:#149F39 ;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom:  15px; 
+    padding:5px 5px;
+    text-align: center;
+}
+.bold-text{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+.para{
+    color: rgb(78, 78, 78);
+    margin-bottom: 15px;
+   
+}
+.explore-now{
+    background-color: rgb(247, 180, 57);
+    width: 150px;
+    padding: 5px 20px;
+    border: none;
+    font-size: 0.85rem;
+}
+
+/* Info section */
+.info-section{
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 2px solid gainsboro;
+    display: flex;
+}
+.card{
+    display: flex;
+    column-gap: 15px;
+    align-items: center; 
+    margin-inline: 15px;
+    margin-bottom: 35px;
+    padding:20px 10px;
+    transition: all 0.3s;
+    
+}
+.card:hover{
+    transform: scale(1.05);
+    border: none;
+    box-shadow: 5px 5px 15px rgba(0, 0,0,0.1);
+}
+.card-contents>h4{
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+.card-contents>p{
+   color:  rgb(78, 78, 78);
+}
+
+
+/* Foods section */
+.food-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.menu-text{
+    width: 100px;
+    text-align: center;
+    color: white;
+    background-color: #149F39;
+    text-transform: capitalize;
+}
+.explore-menu{
+    font-size: 1.75rem; 
+    margin-bottom: 35px;   
+}
+.food-section-container{
+    padding: 10px;
+    display: grid;
+    grid-template-areas: "I1 I1 I2 I3" 
+                         "I1 I1 I2 I7" 
+                         "I4 I5 I6 I7";
+    gap: 10px; 
+}
+.food-section-container>div>img{
+    width: 100%;
+    border-radius: 10px;
+}
+.food-section-container>.pic{
+    transition: all 0.2s;
+}
+.food-section-container>.pic:hover{
+    transform: scale(1.03);
+}
+#pic-1{
+    grid-area: I1;
+}
+#pic-2{
+    grid-area: I2; 
+}
+#pic-3{
+    grid-area: I3;
+}
+#pic-4{
+    grid-area: I4;
+}
+#pic-5{
+    grid-area:I5;
+}
+#pic-6{
+    grid-area: I6;
+}
+#pic-7{
+    grid-area:I7
+}
+
+/* Footer section */
+
+.footer-container{
+    /* width: 100%; */
+    /* height: 250px; */
+    background-color: rgb(255, 255, 151);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    color:rgb(85, 84, 84);
+}
+.company-logo{
+    margin-top: 30px;
+}
+.main-links>h4{
+    margin-bottom: 10px;
+    font-size: 1.15rem;
+    margin-top: 30px;
+}
+.main-links>li{
+    list-style: none;   
+}
+.main-links>li>a{
+    text-decoration: none;
+    color: rgb(85, 84, 84);
+    text-transform: capitalize;
+}
+
+.support-links>h4{
+    margin-top: 30px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-size: 1.15rem;
+}
+.support-links>li{
+    list-style: none;   
+}
+.support-links>li>a{
+    text-decoration: none;
+    color: rgb(85, 84, 84);
+    text-transform: capitalize;
+}
+
+.support-follow{
+    text-align: start;
+    margin-top: 30px;
+    text-transform: capitalize;
+    font-size: 1.15rem;
+}
+.support-contact>h4{
+    margin-bottom: 10px;
+}
+.support-contact{
+    margin-bottom: 20px;
+}
+.support-contact>input{
+    padding: 2px 25px;
+}
+.follow-us>h4{
+    margin-bottom:10px ;
+}
+.f-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+}
+
+@media (min-width:300px)and (max-width:499px){
+    .navbar{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .logo>img{
+        width: 150px;
+        margin-left: 25px;
+    }
+    .menu-items{
+        margin-right: 25px;
+    }
+   .hero-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+   }
+   .foodimg>img{
+    width: 400px;
+    margin-left: 20rem;
+   }
+   .content{
+    width: 100%;
+    margin-left: 400px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 25px;
+   }
+   .content>.offer{
+    width: 100%;
+   }
+   .content>.explore-now{
+    margin-top: 35px;
+    width: 100%;
+    font-size: 1.5rem;
+
+   }
+   .info-section{
+    width: 500px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid gainsboro;
+   }
+   .card{
+    width: 530px;
+    text-align: center;
+    margin-left: 0px;
+
+   }
+   .card-contents{
+    margin-left: 20px;
+   }
+   .card-contents>h4{
+    text-align: start;
+    font-size: 24px;
+    margin-bottom: 20px;
+   }
+   .card-contents>p{
+    text-align: start;
+   }
+   .pic>img{
+    width: 100%;
+   }
+   /* Food section */
+
+
+.menu-text{
+    margin: 0 auto;
+    width: 100px;
+    text-align: center;
+    color: white;
+    background-color: #149F39;
+    text-transform: capitalize;
+}
+.explore-menu{
+    font-size: 1.75rem; 
+    margin-bottom: 35px;   
+}
+.food-section-container{
+    padding: 10px;
+    display: grid;
+    grid-template-areas: "I1 I1 I2 I3" 
+                         "I1 I1 I2 I7" 
+                         "I4 I5 I6 I7";
+    gap: 10px; 
+}
+.food-section-container>div>img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+   .footer-container{
+    /* width: 100%; */
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 0 25px 25px ;
+   }
+}
+
+@media (min-width:500px) and (max-width:800px){
+    .navbar{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .logo>img{
+        width: 150px;
+        margin-left: 25px;
+    }
+    .menu-items{
+        margin-right: 25px;
+    }
+    .foodimg>img{
+        width: 350px;
+    }
+    .hero-section{
+        display:flex;
+        flex-direction: column;
+    }
+    .content{
+        margin-left: auto;
+        text-align: center;
+    }
+    .offer{
+        width: 200px;
+        margin: 0 auto;
+    }
+    .bold-text{
+        font-size: medium;
+        margin-top: 20px;    
+    }
+    .para{
+        /* padding-inline:25px ; */
+        margin-bottom: 25px;
+    }
+    .info-section{
+        margin-block: 45px;
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        padding: 0;
+    }
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding:25px 0 25px 25px;
+        
+    }
+    .company-logo>img{
+        margin-bottom: 25px;
+    }
+    
+}
+
+
