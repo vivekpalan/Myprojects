@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    --large-font:48px;
+    --medium-font:32px;
+    --small-font:24px;
+}
+.wrapper{
+    padding: 3.5rem;
+}
+/* Header section */
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+.links-sec{
+    display: flex;
+}
+.links-sec>li{
+    list-style-type: none;
+    margin-inline: 32px;
+}
+li>a{
+    text-decoration: none;
+    color: gray;
+    font-size: 18px;
+}
+
+/* Hero section */
+.hero-sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.quote>h1{
+    font-size: 48px;
+    text-transform: capitalize;
+}
+.quote>h5{
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+.image-1>img{
+    border-radius: 45px;
+}
+
+/* Info section */
+.info{
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+    gap: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 15px gray;
+}
+.heading{
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.para{
+    margin-bottom: 10px;
+}
+.content-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-container>a{
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+/*Cards section */
+.cards-container{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 48px;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px;
+    transition: 0.2s all;
+    border-radius: 10px;
+}
+.cards:hover{
+    box-shadow: 2px 2px 15px gray;
+    transform: scale(1.01);
+    border: none;
+}
+.cards>h3{
+    text-transform: capitalize;
+    margin-block: 10px;
+}
+.cards>img{
+    width: 100%;
+}
+.cards>p{
+    padding-inline: 50px;
+    margin-bottom: 15px;
+}
+.card-links{
+    display: flex;
+    margin-bottom: 25px;
+}
+.card-links>a{
+    margin-inline: 50px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+/* Article section */
+.article-container>img{
+    width: 100%;
+    padding-block: 2rem;
+}
+.sentence>span{
+    font-weight: bold;
+}
+.copyright{
+    display: inline-block;
+    width: 50%;
+}
+.social-link{
+    float: right;
+    display: flex;
+}
+.social-link>li{
+    list-style-type:none;
+    margin-inline: 24px;
+}
+li>a{
+    color: black;
+}
+
+/* What is section */
+.what-is{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    box-shadow: 5px 5px 15px gray;
+    margin-bottom: 48px;
+}
+.para-container>h2{
+    margin-bottom: 10px;
+}
+.para-container>p{
+    margin-bottom: 15px;
+}
+.date-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.date-container>a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Mobile View */
+@media (min-width:468px) and (max-width:789px){
+    .wrapper{
+        padding: 2rem;
+    }
+    .nav-bar{
+        margin-bottom: 48px;
+    }
+    .logo>h1{
+        margin-right: 20px;
+        font-size: 18px;   
+    }
+    .links-sec>li{
+        justify-content: space-between;
+        margin-inline: 10px;
+    }
+    li>a{
+        font-size: 18px;
+    }
+    .hero-sec{
+        flex-direction: column;
+        margin-bottom: 48px;
+    }
+    .quote>h1{
+        font-size: 32px;
+    }
+    .quote>h5{
+        font-size: 20px;
+        margin-bottom: 32px;
+    }
+    img{
+       width: 100%;
+    }
+
+    .info{
+        flex-direction: column;
+        margin-bottom: 48px;
+    }
+
+    .cards-container{
+        flex-direction: column;
+        margin-bottom: 48px;
+    }
+
+    .what-is{
+        flex-direction: column;
+    }
+
+    .sentence>span{
+        font-weight: bold;
+    }
+    .article-container>p{
+        line-height: 40px;
+    }
+    .copyright{
+        display: block;
+        width: 100%;
+    }
+    .social-link{
+        float: none;
+        display: flex;
+        margin-bottom: 32px;
+        gap: 20px;
+    }
+    .social-link>li{
+        list-style-type:none;
+        margin-inline: 24px;
+    }
+    li>a{
+        color: black;
+    }
+       
+}
+
+@media (min-width:790px) and (max-width:900px) {
+    .cards-container{
+        flex-direction: column;
+    }
+    
+}
+
+
